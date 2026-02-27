@@ -117,7 +117,7 @@ export default function HomePage() {
         pointerEvents: "all",
       }}>
         ⚡ Support this project by trading on{" "}
-        <a href="https://bags.fm" target="_blank" rel="noopener noreferrer" style={{
+        <a href="https://bags.fm/EFXXFqSmU1XssioWEh6w7QafvuhW4t8FZoXRypTmBAGS" target="_blank" rel="noopener noreferrer" style={{
           color: "#c8b878",
           textDecoration: "none",
           borderBottom: "1px solid rgba(200,184,120,0.4)",
@@ -126,7 +126,7 @@ export default function HomePage() {
         </a>
         {" "}— CA:{" "}
         <span style={{ color: "#6a8a6a", fontFamily: "monospace", fontSize: "0.65rem" }}>
-          7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU
+          EFXXFqSmU1XssioWEh6w7QafvuhW4t8FZoXRypTmBAGS
         </span>
       </div>
 
