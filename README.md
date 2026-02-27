@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚰️ Startup Graveyard
 
-## Getting Started
+> **An immersive 3D memorial for dead startups** — walk through a haunted graveyard of ventures that didn't make it.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![Three.js](https://img.shields.io/badge/Three.js-r170-black?logo=three.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+
+## 🌙 Overview
+
+Startup Graveyard is a 3D interactive experience built with **Next.js**, **React Three Fiber**, and **Three.js**. Navigate through an eerie graveyard where each tombstone represents a real startup that failed — complete with their founding year, death year, total funding burned, cause of death, and lessons learned.
+
+### ✨ Features
+
+- 🪦 **CSS-styled 3D tombstones** — 5 unique shapes (arch, gothic, cross, obelisk, tablet) with gradients, shadows, and moss overlays
+- 🎮 **First-person navigation** — WASD / Arrow keys to walk, mouse drag to look, scroll to zoom
+- 🌘 **Atmospheric scene** — stars, moon, dead trees, ghost particles, fog, and lightning flashes
+- 📊 **500+ dead startups** from real data with sector, funding, founders, investors, and cause of death
+- 🔍 **Click any grave** to open a detailed sidebar with the full story
+- 🏷️ **Sector filtering** — filter by industry (Fintech, Health, Ecommerce, etc.)
+- ⚡ **Progressive loading** — graves load in batches for smooth performance
+- 📱 **Gothic theme** — UnifrakturMaguntia, Crimson Text, and Special Elite fonts
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/JayWebtech/dead_companies.git
+cd dead_companies
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and start exploring the graveyard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Technology | Purpose |
+|---|---|
+| **Next.js 15** | React framework with App Router |
+| **React Three Fiber** | React renderer for Three.js |
+| **@react-three/drei** | Useful helpers for R3F |
+| **Three.js** | 3D rendering engine |
+| **TypeScript** | Type safety |
+| **Tailwind CSS** | Utility styling |
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/app/
+├── layout.tsx          # Root layout with gothic fonts & SEO
+├── page.tsx            # Main page with UI overlays, tooltips, detail panel
+├── GraveyardCanvas.tsx # 3D scene: tombstones, trees, particles, controls
+├── globals.css         # Gothic theme, animations, loading screen
+dead_startups.json      # Dataset of 500+ dead startups
+public/
+└── bg.jpg              # Background image
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎮 Controls
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Input | Action |
+|---|---|
+| `W` / `↑` | Walk forward |
+| `S` / `↓` | Walk backward |
+| `A` / `←` | Strafe left |
+| `D` / `→` | Strafe right |
+| **Mouse drag** | Look around |
+| **Scroll** | Zoom in/out |
+| **Click grave** | Open startup details |
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Rest in peace to all the startups that dared to dream.* ⚰️
