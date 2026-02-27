@@ -98,6 +98,38 @@ export default function HomePage() {
         <div className="loading-sub">Unearthing the dead...</div>
       </div>
 
+      {/* Support banner */}
+      <div style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 50,
+        background: "linear-gradient(90deg, rgba(200,184,120,0.12) 0%, rgba(139,26,26,0.15) 50%, rgba(200,184,120,0.12) 100%)",
+        borderBottom: "1px solid rgba(200,184,120,0.15)",
+        padding: "7px 20px",
+        textAlign: "center",
+        fontFamily: "'Special Elite', cursive",
+        fontSize: "0.72rem",
+        color: "#9a9070",
+        letterSpacing: "1.5px",
+        backdropFilter: "blur(10px)",
+        pointerEvents: "all",
+      }}>
+        ⚡ Support this project by trading on{" "}
+        <a href="https://bags.fm" target="_blank" rel="noopener noreferrer" style={{
+          color: "#c8b878",
+          textDecoration: "none",
+          borderBottom: "1px solid rgba(200,184,120,0.4)",
+        }}>
+          Bags.FM
+        </a>
+        {" "}— CA:{" "}
+        <span style={{ color: "#6a8a6a", fontFamily: "monospace", fontSize: "0.65rem" }}>
+          7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU
+        </span>
+      </div>
+
       {/* Lightning flash */}
       <div className="lightning" />
 
@@ -109,7 +141,7 @@ export default function HomePage() {
       />
 
       {/* Overlay UI */}
-      <div className="overlay-ui">
+      <div className="overlay-ui mt-20!">
         {/* Header */}
         <header className="header">
           <h1 className="title-main">Startup Graveyard</h1>
@@ -121,7 +153,7 @@ export default function HomePage() {
         </header>
 
         {/* Sector filters */}
-        <div className="sector-filters">
+        {/* <div className="sector-filters">
           {sectors.map((s) => (
             <button
               key={s}
@@ -131,7 +163,7 @@ export default function HomePage() {
               {s}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Search */}
         {/* <div className="search-container">
