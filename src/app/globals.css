@@ -138,6 +138,69 @@ body {
   }
 }
 
+/* ===================== FOOTER ===================== */
+.site-footer {
+  position: fixed;
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  pointer-events: all;
+  animation: fadeInUp 2s ease-out 0.6s both;
+}
+
+.footer-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px 12px;
+  background: linear-gradient(135deg, rgba(200, 184, 120, 0.15) 0%, rgba(139, 26, 26, 0.12) 100%);
+  border: 1px solid rgba(200, 184, 120, 0.45);
+  color: var(--gold);
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  box-shadow:
+    0 0 20px rgba(200, 184, 120, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: all 0.25s ease;
+}
+
+.footer-github-link:hover {
+  background: linear-gradient(135deg, rgba(200, 184, 120, 0.25) 0%, rgba(139, 26, 26, 0.18) 100%);
+  border-color: var(--gold);
+  box-shadow:
+    0 0 30px rgba(200, 184, 120, 0.35),
+    0 0 50px rgba(200, 184, 120, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  color: #e8e0c8;
+  transform: translateY(-2px);
+}
+
+.footer-github-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
+.footer-github-text {
+  font-weight: 400;
+}
+
+.footer-github-handle {
+  font-size: 0.8rem;
+  color: rgba(200, 184, 120, 0.85);
+  border-left: 1px solid rgba(200, 184, 120, 0.3);
+  padding-left: 10px;
+  margin-left: 2px;
+}
+
+.footer-github-link:hover .footer-github-handle {
+  color: rgba(232, 224, 200, 0.95);
+}
+
 /* ===================== INSTRUCTIONS ===================== */
 .instructions {
   position: fixed;
@@ -549,5 +612,20 @@ body {
   .sector-filters {
     left: 10px;
     max-width: 200px;
+  }
+
+  .footer-github-link {
+    padding: 8px 14px 10px;
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+
+  .footer-github-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-github-handle {
+    padding-left: 8px;
   }
 }
